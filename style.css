@@ -516,9 +516,12 @@ footer {
 
 .resume-content {
     display: grid;
-    grid-template-columns: 0.7fr 1.3fr;
-    gap: 50px;
-    align-items: start;
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
+
+.resume-text {
+    max-width: 800px;
 }
 
 .resume-text h3 {
@@ -528,8 +531,7 @@ footer {
 
 .resume-text p {
     color: #666;
-    margin-bottom: 30px;
-    max-width: 400px;
+    margin-bottom: 25px;
 }
 
 .resume-text .button {
@@ -540,8 +542,7 @@ footer {
 
 .resume-preview {
     width: 100%;
-    height: 650px;
-
+    height: 900px;
     border: 1px solid #ddd;
     background: #eee;
 }
