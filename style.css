@@ -1,4 +1,3 @@
-```css
 /* =========================
    Base
 ========================= */
@@ -481,4 +480,74 @@ footer {
         padding-right: 0;
     }
 }
-```
+
+
+/* =========================
+   About Photo
+========================= */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about-photo {
+    width: 280px;
+    height: 340px;
+    overflow: hidden;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 650px;
+}
+
+
+/* =========================
+   Resume
+========================= */
+
+.resume-content {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.resume-text h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.resume-text p {
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.resume-text .button {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+.resume-preview {
+    width: 100%;
+    height: 650px;
+
+    border: 1px solid #ddd;
+    background: #eee;
+}
+
+.resume-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
