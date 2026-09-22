@@ -232,107 +232,98 @@ nav {
 
 
 /* =========================
-   Projects
+   PROJECTS
 ========================= */
-
-.projects-section {
-    max-width: 1200px;
-}
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 30px;
 }
 
 .project-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     background: white;
-
     border: 1px solid #ddd;
-
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
     width: 100%;
-    height: 300px;
-
+    height: 220px;
     overflow: hidden;
-
-    background: #e9e9e7;
+    background: #f1f1f1;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
-    transition: transform 0.4s ease;
 }
 
-.project-card:hover .project-image img {
-    transform: scale(1.04);
+.project-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 1.1rem;
 }
 
-.project-content {
-    padding: 30px;
+.project-info {
+    padding: 25px;
 }
 
-.project-type {
-    font-size: 11px;
-    letter-spacing: 2px;
-
-    color: #888;
-
-    margin-bottom: 10px;
+.project-info h3 {
+    margin: 10px 0;
+    font-size: 1.3rem;
 }
 
-.project-content h3 {
-    font-size: 27px;
-
-    margin-bottom: 12px;
-}
-
-.project-content > p:not(.project-type) {
+.project-info p {
     color: #666;
-
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-
-    margin-bottom: 25px;
-}
-
-.tags span {
-    padding: 5px 9px;
-
-    background: #eee;
-
-    font-size: 11px;
-    font-family: monospace;
-}
-
 .project-link {
-    font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
-.project-link:hover {
-    text-decoration: underline;
+.project-status {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
 }
 
+.completed {
+    background: #eee;
+    color: #444;
+}
+
+.in-progress {
+    background: #eee;
+    color: #555;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
 
 /* =========================
    Skills
