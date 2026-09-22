@@ -237,7 +237,8 @@ nav {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 380px);
+    justify-content: center;
     gap: 30px;
 }
 
@@ -316,13 +317,20 @@ nav {
 }
 
 
-/* Mobile */
-@media (max-width: 768px) {
+/* =========================
+   MOBILE
+========================= */
 
+@media (max-width: 800px) {
     .projects-grid {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
+    .project-card {
+        width: 100%;
+        max-width: 380px;
+    }
 }
 
 /* =========================
