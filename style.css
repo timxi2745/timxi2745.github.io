@@ -443,39 +443,34 @@ section {
 
 .skills-grid {
     display: grid;
-
     grid-template-columns: repeat(3, minmax(0, 1fr));
-
     gap: 30px;
 }
 
 .skill-box {
     padding: 30px;
 
-    background: white;
+    background: #ffffff;
 
     border: 1px solid #e1e1df;
     border-radius: 8px;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .skill-box h3 {
     margin-bottom: 12px;
-
     font-size: 19px;
 }
 
 .skill-box p {
     color: #666;
     line-height: 1.7;
-}
-
-.skill-box {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.skill-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================
