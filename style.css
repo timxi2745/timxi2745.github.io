@@ -30,31 +30,39 @@ img {
 }
 
 
-/* =========================================================
-   NAVIGATION
-========================================================= */
+/* =========================
+   GLOBAL NAVIGATION
+========================= */
 
-.navbar {
+nav {
     width: 100%;
+    padding: 22px 50px;
+    background: #f8f8f6;
+    border-bottom: 1px solid #e5e5e3;
+}
+
+.nav-container {
+    max-width: 1250px;
+    margin: 0 auto;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 22px 50px;
-
-    background: #f8f8f6;
-
-    border-bottom: 1px solid #e0e0de;
-
-    position: relative;
-    z-index: 10;
 }
 
 .logo {
+    color: #111;
+    text-decoration: none;
+
     font-size: 21px;
     font-weight: 600;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.5px;
+
+    transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+    opacity: 0.65;
 }
 
 .nav-links {
@@ -64,19 +72,17 @@ img {
 }
 
 .nav-links a {
-    color: #555;
+    color: #333;
+    text-decoration: none;
 
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
 
-    transition:
-        color 0.2s ease,
-        transform 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #111;
-    transform: translateY(-2px);
+    color: #000;
 }
 
 
