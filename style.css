@@ -660,6 +660,37 @@ nav {
     display: block;
 }
 
+
+/* =========================================================
+   PROJECT FIGURES
+========================================================= */
+
+.project-figure {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.project-figure img {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.project-figure figcaption {
+    margin-top: 14px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    color: #555;
+    text-align: center;
+}
+
+
 /* =========================================================
    BACK LINK
 ========================================================= */
