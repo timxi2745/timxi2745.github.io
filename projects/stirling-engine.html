@@ -7,7 +7,6 @@
 
     <title>Stirling Engine Cart | Tianwei Xi</title>
 
-    <!-- Go up one folder to find style.css -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -15,55 +14,35 @@
 
     <!-- =========================
          NAVIGATION
-    ========================== -->
+    ========================= -->
 
-    <nav>
-        <div class="nav-container">
+    <nav class="navbar">
 
-            <a href="../index.html" class="logo">
-                Tianwei Xi
-            </a>
+        <a href="../index.html" class="logo">
+            Tianwei Xi
+        </a>
 
-            <div class="nav-links">
-
-                <a href="../index.html#about">
-                    About
-                </a>
-
-                <a href="../index.html#projects">
-                    Projects
-                </a>
-
-                <a href="../index.html#resume">
-                    Resume
-                </a>
-
-                <a href="../index.html#skills">
-                    Skills
-                </a>
-
-                <a href="../index.html#contact">
-                    Contact
-                </a>
-
-            </div>
-
+        <div class="nav-links">
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#resume">Resume</a>
+            <a href="../index.html#skills">Skills</a>
+            <a href="../index.html#contact">Contact</a>
         </div>
+
     </nav>
 
 
     <!-- =========================
          PROJECT
-    ========================== -->
+    ========================= -->
 
     <main class="project-page">
-
-        <!-- Project Header -->
 
         <header class="project-page-header">
 
             <p class="eyebrow">
-                MECHANICAL ENGINEERING
+                PHYSICS / THERMODYNAMICS / EXPERIMENTAL ANALYSIS
             </p>
 
             <h1>
@@ -71,65 +50,49 @@
             </h1>
 
             <p class="project-subtitle">
-                Experimental thermodynamics project analyzing the
-                efficiency of a model Stirling engine by comparing
-                theoretical and measured performance.
+                Experimental investigation of Stirling engine efficiency through
+                thermodynamic modeling, CAD-based mechanical analysis, and
+                experimental testing.
             </p>
 
         </header>
 
 
-        <!-- Main Image -->
+        <!-- =========================
+             MAIN IMAGE
+        ========================= -->
 
         <img
             src="../images/stirling-engine.jpg"
-            alt="Stirling Engine Cart"
+            alt="Stirling engine cart"
             class="project-main-image"
         >
 
 
         <!-- =========================
              PROJECT DETAILS
-        ========================== -->
+        ========================= -->
 
         <div class="project-details">
 
             <div class="project-detail">
-
-                <span>
-                    Project Type
-                </span>
-
-                <strong>
-                    Thermodynamics
-                </strong>
-
+                <span>Course</span>
+                <strong>Physics 4C</strong>
             </div>
 
-
             <div class="project-detail">
-
-                <span>
-                    Tools
-                </span>
-
-                <strong>
-                    MATLAB · Experimental Testing
-                </strong>
-
+                <span>Team</span>
+                <strong>Tianwei Xi & Collin Wong</strong>
             </div>
 
+            <div class="project-detail">
+                <span>Test Distance</span>
+                <strong>3.05 m</strong>
+            </div>
 
             <div class="project-detail">
-
-                <span>
-                    Status
-                </span>
-
-                <strong>
-                    Completed
-                </strong>
-
+                <span>Experimental Trials</span>
+                <strong>10</strong>
             </div>
 
         </div>
@@ -137,9 +100,12 @@
 
         <!-- =========================
              PROJECT CONTENT
-        ========================== -->
+        ========================= -->
 
         <div class="project-page-content">
+
+
+            <!-- OVERVIEW -->
 
             <section>
 
@@ -148,27 +114,207 @@
                 </h2>
 
                 <p>
-                    Describe the project here. Explain what you were
-                    trying to accomplish, what you designed or analyzed,
-                    and why the project was performed.
+                    This project investigated the efficiency of a model Stirling
+                    Engine mounted to a cart. The objective was to experimentally
+                    determine the engine's efficiency and compare the measured
+                    result with the theoretical efficiency predicted by the
+                    Stirling cycle.
+                </p>
+
+                <p>
+                    The engine converted thermal energy from an alcohol lamp into
+                    mechanical work, causing the cart to travel a measured
+                    distance of 3.05 meters. Both translational and rotational
+                    work were considered when determining the total mechanical
+                    output of the system.
+                </p>
+
+                <p>
+                    The theoretical model used the temperature difference between
+                    the hot and cold sides of the engine, while the experimental
+                    analysis incorporated measured travel time, cart mass,
+                    fuel consumption, and wheel dynamics.
                 </p>
 
             </section>
 
+
+            <!-- THERMODYNAMIC MODEL -->
 
             <section>
 
                 <h2>
-                    Approach
+                    Thermodynamic Model
                 </h2>
 
                 <p>
-                    Explain your engineering process, calculations,
-                    experiments, design decisions, and tools used.
+                    An ideal Stirling Engine operates through alternating
+                    isothermal and isochoric processes. The working gas undergoes
+                    isothermal expansion, isochoric cooling, isothermal
+                    compression, and isochoric heating before returning to its
+                    initial state.
+                </p>
+
+                <p>
+                    The theoretical efficiency was calculated using the
+                    temperature ratio between the cold and hot sides of the
+                    engine:
+                </p>
+
+                <div class="equation-box">
+
+                    <div class="equation">
+                        η = 1 − T<sub>C</sub> / T<sub>H</sub>
+                    </div>
+
+                </div>
+
+                <p>
+                    The experiment used room temperature for the cold-side
+                    temperature and the combustion temperature of denatured
+                    alcohol as the hot-side temperature.
                 </p>
 
             </section>
 
+
+            <!-- EXPERIMENTAL METHOD -->
+
+            <section>
+
+                <h2>
+                    Experimental Method
+                </h2>
+
+                <p>
+                    The Stirling Engine cart was tested over a fixed 3.05-meter
+                    track. The cart was allowed to reach operating speed before
+                    being placed on the track, and a stopwatch was used to measure
+                    the travel time.
+                </p>
+
+                <p>
+                    The mass of the system was measured before and after each run
+                    to determine the amount of fuel consumed. Ten trials were
+                    performed to obtain a range of measurements.
+                </p>
+
+                <p>
+                    A wheel marker was also used to estimate wheel rotation during
+                    a test run. Approximately 17–18 revolutions occurred over
+                    the 3.05-meter track, indicating little to no wheel slip.
+                </p>
+
+                <div class="project-stat-grid">
+
+                    <div class="project-stat">
+                        <strong>3.05 m</strong>
+                        <span>Measured track distance</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>10</strong>
+                        <span>Experimental trials</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>54.8 mm</strong>
+                        <span>Wheel diameter</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>21 °C</strong>
+                        <span>Measured room temperature</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CAD ANALYSIS -->
+
+            <section>
+
+                <h2>
+                    CAD-Based Mechanical Analysis
+                </h2>
+
+                <p>
+                    CAD software was used to determine the mass properties of the
+                    wheel because of its complex geometry. The calculated moment
+                    of inertia about the wheel's axis of rotation was then used
+                    to determine the rotational work produced by the system.
+                </p>
+
+                <div class="project-stat-grid">
+
+                    <div class="project-stat">
+                        <strong>0.02023 kg</strong>
+                        <span>Wheel mass</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>9.8488 × 10⁻⁶ kg·m²</strong>
+                        <span>Wheel moment of inertia</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>54.8 mm</strong>
+                        <span>Wheel diameter</span>
+                    </div>
+
+                </div>
+
+                <p>
+                    The rotational contribution to the total work was calculated
+                    for all four wheels using the wheel moment of inertia and
+                    angular velocity.
+                </p>
+
+            </section>
+
+
+            <!-- WORK CALCULATION -->
+
+            <section>
+
+                <h2>
+                    Mechanical Work Analysis
+                </h2>
+
+                <p>
+                    Total mechanical output was determined by combining the
+                    translational work of the cart with the rotational work of
+                    its four wheels.
+                </p>
+
+                <div class="equation-box">
+
+                    <div class="equation">
+                        W<sub>total</sub> =
+                        ½mv² +
+                        4(½Iω²)
+                    </div>
+
+                </div>
+
+                <p>
+                    Translational velocity was determined from the measured
+                    displacement and travel time. Angular velocity was then
+                    calculated from the wheel radius and cart velocity.
+                </p>
+
+                <p>
+                    Across the ten trials, the average total mechanical work
+                    produced by the system was calculated to be approximately
+                    <strong>0.0433 J</strong>.
+                </p>
+
+            </section>
+
+
+            <!-- RESULTS -->
 
             <section>
 
@@ -176,46 +322,117 @@
                     Results
                 </h2>
 
+                <div class="results-grid">
+
+                    <div class="result-card">
+                        <span>Average Mechanical Work</span>
+                        <strong>0.0433 J</strong>
+                    </div>
+
+                    <div class="result-card">
+                        <span>Experimental Efficiency</span>
+                        <strong>0.0052%</strong>
+                    </div>
+
+                    <div class="result-card">
+                        <span>Theoretical Efficiency</span>
+                        <strong>86.5978%</strong>
+                    </div>
+
+                    <div class="result-card">
+                        <span>Percent Error</span>
+                        <strong>99.9940%</strong>
+                    </div>
+
+                </div>
+
                 <p>
-                    Describe what you measured, calculated, observed,
-                    or learned from the project.
+                    The experimental efficiency was substantially lower than the
+                    theoretical value. The report identifies several factors that
+                    contributed to the difference, including heat losses,
+                    friction, fuel losses during startup, measurement
+                    uncertainty, and limitations of the idealized temperature
+                    assumptions.
                 </p>
 
             </section>
 
 
-            <!-- =========================
-                 PROJECT GALLERY
-            ========================== -->
+            <!-- ENGINEERING DISCUSSION -->
 
             <section>
 
                 <h2>
-                    Project Gallery
+                    Engineering Discussion
                 </h2>
 
-                <div class="project-gallery">
+                <p>
+                    One major limitation was the assumption that the full
+                    combustion energy of the denatured alcohol entered the
+                    Stirling Engine as useful heat input. In practice, only a
+                    fraction of the combustion energy reaches the working gas,
+                    while additional energy is lost to the surroundings and
+                    through the mechanical components.
+                </p>
 
-                    <img
-                        src="../images/stirling-engine-1.jpg"
-                        alt="Stirling engine project"
-                    >
+                <p>
+                    The analysis also identified friction within the engine,
+                    rolling resistance at the wheels, fuel consumed while the
+                    engine reached steady speed, stopwatch uncertainty, and
+                    variation in the actual path of the cart as sources of
+                    experimental error.
+                </p>
 
-                    <img
-                        src="../images/stirling-engine-2.jpg"
-                        alt="Stirling engine testing"
+                <p>
+                    The results demonstrate the difference between an ideal
+                    thermodynamic model and the performance of a real mechanical
+                    system.
+                </p>
+
+            </section>
+
+
+            <!-- DOCUMENTATION -->
+
+            <section>
+
+                <h2>
+                    Project Documentation
+                </h2>
+
+                <div class="project-document">
+
+                    <div>
+                        <h3>
+                            Formal Project Report
+                        </h3>
+
+                        <p>
+                            Full documentation including the theoretical model,
+                            experimental procedure, measurements, CAD analysis,
+                            uncertainty calculations, results, and discussion.
+                        </p>
+                    </div>
+
+                    <a
+                        href="../reports/stirling.pdf"
+                        target="_blank"
+                        class="button button-secondary"
                     >
+                        View Full Report →
+                    </a>
 
                 </div>
 
             </section>
+
 
         </div>
 
 
         <!-- =========================
              BACK TO PROJECTS
-        ========================== -->
+        ========================= -->
 
         <a
             href="../index.html#projects"
@@ -229,23 +446,16 @@
 
     <!-- =========================
          FOOTER
-    ========================== -->
+    ========================= -->
 
     <footer>
 
-        <div class="container footer-content">
-
-            <p>
-                © 2026 Tianwei Xi
-            </p>
-
-            <p>
-                Built with HTML & CSS
-            </p>
-
-        </div>
+        <p>
+            © 2026 Tianwei Xi
+        </p>
 
     </footer>
 
 </body>
+
 </html>
