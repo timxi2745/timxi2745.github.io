@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,8 +45,9 @@
             </h1>
 
             <p class="project-subtitle">
-                Engineering analysis project using MATLAB to process and
-                visualize vehicle motion data.
+                MATLAB-based performance modeling and experimental analysis
+                of a 2016 Subaru Forester using vehicle motion and fuel
+                consumption data.
             </p>
 
         </header>
@@ -53,7 +55,7 @@
 
         <img
             src="../images/vehicle-matlab.jpg"
-            alt="Vehicle motion data analysis in MATLAB"
+            alt="Vehicle motion data analysis and MATLAB modeling"
             class="project-main-image"
         >
 
@@ -66,18 +68,18 @@
             </div>
 
             <div class="project-detail">
+                <span>Vehicle</span>
+                <strong>2016 Subaru Forester</strong>
+            </div>
+
+            <div class="project-detail">
                 <span>Focus</span>
-                <strong>Motion Analysis</strong>
+                <strong>Vehicle Performance</strong>
             </div>
 
             <div class="project-detail">
-                <span>Methods</span>
-                <strong>Data Processing</strong>
-            </div>
-
-            <div class="project-detail">
-                <span>Output</span>
-                <strong>Plots & Analysis</strong>
+                <span>Data</span>
+                <strong>OBD Measurements</strong>
             </div>
 
         </div>
@@ -92,35 +94,19 @@
                 </h2>
 
                 <p>
-                    This project analyzed vehicle motion data using MATLAB.
-                    The goal was to process experimental data and use
-                    engineering calculations to investigate vehicle motion.
+                    This team project developed a performance model for a
+                    2016 Subaru Forester using experimentally collected
+                    vehicle data. The study analyzed position, velocity,
+                    acceleration, engine fuel rate, and RPM to model vehicle
+                    behavior under different driving conditions.
                 </p>
 
                 <p>
-                    The analysis focused on converting raw measurements into
-                    useful quantities such as velocity and acceleration and
-                    presenting the results through graphical analysis.
-                </p>
-
-            </section>
-
-
-            <section>
-
-                <h2>
-                    Data Processing
-                </h2>
-
-                <p>
-                    MATLAB was used to organize and process the collected
-                    measurements. Calculations were performed to determine
-                    changes in vehicle motion over time.
-                </p>
-
-                <p>
-                    The processed data was then visualized to make trends in
-                    the vehicle's motion easier to identify and interpret.
+                    MATLAB was used to process the collected measurements,
+                    develop predictive models, and visualize vehicle
+                    performance. The models were then used to extrapolate
+                    vehicle behavior across three test courses and the
+                    Irwindale track.
                 </p>
 
             </section>
@@ -129,38 +115,223 @@
             <section>
 
                 <h2>
-                    Engineering Analysis
+                    Experimental Data Collection
                 </h2>
 
                 <p>
-                    Velocity and acceleration were examined to understand how
-                    the vehicle's motion changed throughout the measured
-                    interval.
+                    Vehicle data was collected using a Veepeak Mini OBD
+                    reader and the Car Scanner application. The initial
+                    testing focused on acceleration from rest to 35 mph,
+                    which provided the primary dataset used to develop the
+                    performance models.
+                </p>
+
+                <p>
+                    Additional testing was performed on a closed course at
+                    Mt. San Antonio College. Three trials were completed for
+                    each course under approximately the same conditions.
                 </p>
 
                 <div class="project-stats">
 
                     <div class="project-stat">
-                        <strong>MATLAB</strong>
-                        <span>Data processing</span>
+                        <strong>Course 1</strong>
+                        <span>0 → 15 mph, then maintain speed to 100 yd</span>
                     </div>
 
                     <div class="project-stat">
-                        <strong>Velocity</strong>
-                        <span>Motion analysis</span>
+                        <strong>Course 2</strong>
+                        <span>0 → 25 mph, then decelerate over 200 yd</span>
                     </div>
 
                     <div class="project-stat">
-                        <strong>Acceleration</strong>
-                        <span>Dynamic behavior</span>
+                        <strong>Course 3</strong>
+                        <span>¼ mile at approximately 15 mph average</span>
                     </div>
 
                     <div class="project-stat">
-                        <strong>Visualization</strong>
-                        <span>Engineering plots</span>
+                        <strong>Irwindale</strong>
+                        <span>Performance extrapolation</span>
                     </div>
 
                 </div>
+
+            </section>
+
+
+            <section>
+
+                <h2>
+                    MATLAB Data Processing
+                </h2>
+
+                <p>
+                    The collected measurements were organized and processed
+                    before being analyzed in MATLAB. Units were converted to
+                    SI units and MATLAB's built-in functions were used to
+                    visualize relationships between position, velocity,
+                    acceleration, fuel usage, and time.
+                </p>
+
+                <p>
+                    The modeling approach divided each driving course into
+                    separate sections, allowing different portions of the
+                    vehicle's motion to be represented using appropriate
+                    kinematic relationships.
+                </p>
+
+                <p>
+                    For example, constant acceleration was used to model the
+                    initial acceleration portions of the courses, while
+                    constant velocity was represented using a linear position
+                    relationship.
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h2>
+                    Vehicle Motion Modeling
+                </h2>
+
+                <p>
+                    Position, velocity, and acceleration were analyzed as
+                    functions of time. Constant-acceleration kinematic
+                    relationships were used to model the vehicle during
+                    acceleration, while constant-velocity sections were
+                    represented using linear relationships.
+                </p>
+
+                <p>
+                    The Course 1 model predicted an initially parabolic
+                    distance-versus-time relationship during acceleration,
+                    followed by a constant slope once the vehicle reached
+                    approximately 15 mph.
+                </p>
+
+                <p>
+                    The Course 2 model incorporated both acceleration and
+                    deceleration. Comparison with experimental data showed
+                    that the model captured several portions of the motion,
+                    while deviations occurred during the transition to a
+                    complete stop.
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h2>
+                    Fuel Consumption Analysis
+                </h2>
+
+                <p>
+                    Fuel usage was modeled as a function of time using an
+                    experimentally determined fuel consumption rate of
+                    approximately 0.00256 gallons per second.
+                </p>
+
+                <p>
+                    The performance models relatively predicted the fuel
+                    behavior of Courses 1 and 3. The analysis also showed a
+                    relationship between acceleration and increasing fuel
+                    usage during the Irwindale extrapolation.
+                </p>
+
+                <p>
+                    The Irwindale model predicted approximately 0.15 gallons
+                    of fuel consumption over 50 seconds.
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h2>
+                    RPM Analysis
+                </h2>
+
+                <p>
+                    RPM data presented an additional challenge during the
+                    experiment. The Car Scanner data export did not provide
+                    usable RPM measurements, so RPM values for the initial
+                    0–35 mph dataset were approximated using the relationship
+                    between angular velocity, vehicle velocity, and tire
+                    radius.
+                </p>
+
+                <p>
+                    Because RPM measurements were not collected for the three
+                    course trials, the predictive accuracy of the RPM model
+                    for those courses could not be evaluated.
+                </p>
+
+                <p>
+                    The report also identified an important limitation of
+                    estimating engine RPM from wheel motion: engine RPM can
+                    differ from wheel RPM because the engine can operate
+                    independently of vehicle motion, particularly while the
+                    vehicle is idling.
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h2>
+                    Irwindale Performance Model
+                </h2>
+
+                <p>
+                    The MATLAB models were extrapolated to predict vehicle
+                    performance on the Irwindale track. The model predicted
+                    approximately 23 m/s as the vehicle's top speed and an
+                    acceleration of approximately 5 m/s² during the modeled
+                    acceleration section.
+                </p>
+
+                <p>
+                    The model also predicted an increase in fuel usage as the
+                    vehicle accelerated, followed by a reduction in the rate
+                    of fuel consumption as the vehicle approached a stop.
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h2>
+                    Results & Limitations
+                </h2>
+
+                <p>
+                    Comparison between the experimental data and the
+                    performance models showed that the models captured
+                    several overall trends in vehicle motion. However,
+                    discrepancies were observed between the experimental
+                    results and previously published vehicle performance
+                    values.
+                </p>
+
+                <p>
+                    Several limitations affected the analysis, including the
+                    relatively small dataset, limited variation in the
+                    acceleration tests, missing RPM measurements, and the
+                    short duration of the fuel-consumption measurements.
+                </p>
+
+                <p>
+                    The project also demonstrated that average speed alone
+                    does not describe how speed changes throughout a trip,
+                    which created additional challenges when modeling
+                    Course 3.
+                </p>
 
             </section>
 
@@ -173,8 +344,69 @@
 
                 <p>
                     This project strengthened my experience using MATLAB for
-                    engineering data analysis and demonstrated the importance
-                    of visualization when interpreting experimental results.
+                    engineering data processing, visualization, and
+                    performance modeling. It also provided hands-on
+                    experience connecting experimental vehicle data with
+                    fundamental mechanics and kinematic relationships.
+                </p>
+
+                <p>
+                    A major takeaway was the importance of collecting
+                    sufficient and diverse experimental data when developing
+                    predictive engineering models. Comparing experimental
+                    measurements with theoretical models helped identify both
+                    the strengths and limitations of the modeling approach.
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h2>
+                    Technical Skills
+                </h2>
+
+                <div class="project-stats">
+
+                    <div class="project-stat">
+                        <strong>MATLAB</strong>
+                        <span>Data processing and modeling</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>Data Analysis</strong>
+                        <span>Experimental vehicle data</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>Vehicle Dynamics</strong>
+                        <span>Motion and acceleration analysis</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>Data Visualization</strong>
+                        <span>Engineering plots and trends</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h2>
+                    Project Outcome
+                </h2>
+
+                <p>
+                    The final performance models provided a practical way to
+                    examine and predict vehicle behavior across different
+                    driving conditions. The project demonstrated how
+                    experimental data, physics-based equations, and MATLAB
+                    visualization can be combined to investigate real-world
+                    vehicle performance.
                 </p>
 
             </section>
@@ -206,3 +438,4 @@
 
 </body>
 </html>
+```
