@@ -33,6 +33,7 @@
 
     <main class="project-page">
 
+        <!-- PROJECT HEADER -->
         <header class="project-page-header">
 
             <p class="eyebrow">
@@ -45,19 +46,21 @@
 
             <p class="project-subtitle">
                 Mechanical design project focused on CAD modeling,
-                structural design, fabrication, and experimental load testing.
+                structural analysis, 3D printing, and experimental load testing.
             </p>
 
         </header>
 
 
+        <!-- CAD IMAGE -->
         <img
             src="../images/bridge.jpg"
-            alt="CAD bridge design"
+            alt="CAD model of the bridge design"
             class="project-main-image"
         >
 
 
+        <!-- PROJECT DETAILS -->
         <div class="project-details">
 
             <div class="project-detail">
@@ -66,18 +69,18 @@
             </div>
 
             <div class="project-detail">
-                <span>Tools</span>
-                <strong>CAD / Fabrication</strong>
+                <span>CAD</span>
+                <strong>Fusion 360</strong>
+            </div>
+
+            <div class="project-detail">
+                <span>Material</span>
+                <strong>PLA</strong>
             </div>
 
             <div class="project-detail">
                 <span>Testing</span>
-                <strong>Load Testing</strong>
-            </div>
-
-            <div class="project-detail">
-                <span>Type</span>
-                <strong>Engineering Design</strong>
+                <strong>Load to Failure</strong>
             </div>
 
         </div>
@@ -85,6 +88,8 @@
 
         <div class="project-content">
 
+
+            <!-- OVERVIEW -->
             <section>
 
                 <h2>
@@ -92,20 +97,103 @@
                 </h2>
 
                 <p>
-                    This project involved designing a bridge structure using
-                    CAD and evaluating the resulting design through physical
-                    load testing.
+                    This project involved designing, analyzing, and 3D printing
+                    a truss bridge for a structural load-testing competition.
+                    The bridge was designed in Fusion 360 and evaluated using
+                    a Method of Joints analysis before being fabricated and
+                    physically tested.
                 </p>
 
                 <p>
-                    The design process required consideration of structural
-                    geometry, material usage, member placement, and the
-                    expected loading conditions.
+                    The project connected computer-aided design, structural
+                    analysis, additive manufacturing, and experimental testing
+                    into a single engineering design process.
                 </p>
 
             </section>
 
 
+            <!-- DESIGN CONSTRAINTS -->
+            <section>
+
+                <h2>
+                    Design Constraints
+                </h2>
+
+                <p>
+                    The bridge had to satisfy a number of geometric,
+                    manufacturing, and structural requirements before testing.
+                </p>
+
+
+                <div class="project-stats">
+
+                    <div class="project-stat">
+                        <strong>10 in</strong>
+                        <span>Required bridge span</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>3 in</strong>
+                        <span>Maximum bridge height</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>125 g</strong>
+                        <span>Maximum bridge mass</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>PLA</strong>
+                        <span>Single-piece 3D print</span>
+                    </div>
+
+                </div>
+
+
+                <ul class="project-list">
+
+                    <li>
+                        The bridge had to span a 10-inch gap.
+                    </li>
+
+                    <li>
+                        The width had to allow a standard Hot Wheels car
+                        to pass through the bridge.
+                    </li>
+
+                    <li>
+                        The bridge height could not exceed 3 inches.
+                    </li>
+
+                    <li>
+                        The structure had to consist of two identical trusses
+                        connected by stringers or cross-members.
+                    </li>
+
+                    <li>
+                        The bridge had to be 3D printed from PLA as one piece.
+                    </li>
+
+                    <li>
+                        The total bridge mass could not exceed 125 grams.
+                    </li>
+
+                    <li>
+                        The bridge required a 1 × 1 inch loading area with
+                        a ¼-inch diameter through-hole.
+                    </li>
+
+                    <li>
+                        A roadway had to extend across the entire bridge.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- CAD DESIGN -->
             <section>
 
                 <h2>
@@ -113,20 +201,100 @@
                 </h2>
 
                 <p>
-                    The bridge was modeled using CAD software before
-                    fabrication. The digital model was used to establish the
-                    overall geometry and provide a reference for construction.
+                    The bridge was modeled in Fusion 360 before fabrication.
+                    The CAD model was used to establish the overall geometry,
+                    dimensions, truss arrangement, and member placement.
                 </p>
 
                 <p>
-                    The design process focused on creating a structure capable
-                    of carrying the required load while maintaining an
-                    efficient arrangement of structural members.
+                    The final design was also prepared for 3D printing,
+                    including generation of the G-code used to fabricate
+                    the physical prototype.
+                </p>
+
+
+                <!-- OPTIONAL SECOND CAD IMAGE -->
+                <img
+                    src="../images/bridge-cad-dimensions.jpg"
+                    alt="Bridge CAD dimensions"
+                    class="project-content-image"
+                >
+
+            </section>
+
+
+            <!-- STRUCTURAL ANALYSIS -->
+            <section>
+
+                <h2>
+                    Structural Analysis
+                </h2>
+
+                <p>
+                    The truss was analyzed using the Method of Joints to
+                    determine the load carried by each member and whether
+                    individual members were in tension or compression.
+                </p>
+
+                <p>
+                    The analysis document included the bridge geometry,
+                    design dimensions, and the complete truss analysis used
+                    during the design process.
+                </p>
+
+
+                <!-- PDF EMBED -->
+                <div class="project-pdf">
+
+                    <iframe
+                        src="../documents/bridge-analysis.pdf"
+                        title="Bridge Truss Analysis PDF">
+                    </iframe>
+
+                </div>
+
+
+                <a
+                    href="../documents/bridge-analysis.pdf"
+                    target="_blank"
+                    class="project-button"
+                >
+                    View Full Analysis →
+                </a>
+
+            </section>
+
+
+            <!-- PHYSICAL PROTOTYPE -->
+            <section>
+
+                <h2>
+                    Physical Prototype
+                </h2>
+
+                <p>
+                    After completing the CAD design and structural analysis,
+                    the bridge was 3D printed in PLA. The physical prototype
+                    was then prepared for load testing to evaluate its
+                    performance under increasing load.
+                </p>
+
+
+                <img
+                    src="../images/bridge-irl.jpg"
+                    alt="3D printed bridge prototype"
+                    class="project-content-image"
+                >
+
+
+                <p class="image-caption">
+                    Final 3D-printed bridge prototype.
                 </p>
 
             </section>
 
 
+            <!-- TESTING -->
             <section>
 
                 <h2>
@@ -134,32 +302,33 @@
                 </h2>
 
                 <p>
-                    After fabrication, the completed bridge was subjected to
-                    physical load testing. The test provided an opportunity
-                    to compare the expected structural behavior with the
-                    behavior of the fabricated structure.
+                    The completed bridge was subjected to physical loading
+                    until failure. The test provided an opportunity to compare
+                    the predicted structural behavior with the behavior of
+                    the fabricated bridge.
                 </p>
+
 
                 <div class="project-stats">
 
                     <div class="project-stat">
                         <strong>CAD</strong>
-                        <span>Digital structural design</span>
-                    </div>
-
-                    <div class="project-stat">
-                        <strong>Fabrication</strong>
-                        <span>Physical prototype</span>
-                    </div>
-
-                    <div class="project-stat">
-                        <strong>Testing</strong>
-                        <span>Experimental loading</span>
+                        <span>Fusion 360 structural design</span>
                     </div>
 
                     <div class="project-stat">
                         <strong>Analysis</strong>
-                        <span>Structural evaluation</span>
+                        <span>Method of Joints</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>Fabrication</strong>
+                        <span>3D-printed PLA prototype</span>
+                    </div>
+
+                    <div class="project-stat">
+                        <strong>Testing</strong>
+                        <span>Experimental load testing</span>
                     </div>
 
                 </div>
@@ -167,6 +336,7 @@
             </section>
 
 
+            <!-- ENGINEERING TAKEAWAYS -->
             <section>
 
                 <h2>
@@ -174,17 +344,26 @@
                 </h2>
 
                 <p>
-                    The project provided experience connecting CAD-based
-                    engineering design with physical fabrication and testing.
-                    It also demonstrated how real-world structures can behave
-                    differently from an idealized digital design.
+                    This project provided hands-on experience taking a
+                    mechanical structure from an initial concept through
+                    CAD modeling, structural analysis, fabrication, and
+                    physical testing.
+                </p>
+
+                <p>
+                    It also demonstrated the importance of balancing structural
+                    performance, geometry, material usage, manufacturing
+                    constraints, and weight when developing an engineering
+                    design.
                 </p>
 
             </section>
 
+
         </div>
 
 
+        <!-- BACK LINK -->
         <a
             href="../index.html#projects"
             class="back-link"
